@@ -4,23 +4,52 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine-Core", "Engine-Core\Engine-Core.vcxproj", "{76FCC301-EECC-4DAF-8E38-3555C14BA65E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BDCF6597-F53B-3D86-870E-43918A723B61} = {BDCF6597-F53B-3D86-870E-43918A723B61}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glfw", "glfw-3.2.1\build\src\glfw.vcxproj", "{BDCF6597-F53B-3D86-870E-43918A723B61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		MinSizeRel|x64 = MinSizeRel|x64
+		MinSizeRel|x86 = MinSizeRel|x86
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
+		RelWithDebInfo|x64 = RelWithDebInfo|x64
+		RelWithDebInfo|x86 = RelWithDebInfo|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{76FCC301-EECC-4DAF-8E38-3555C14BA65E}.Debug|x64.ActiveCfg = Debug|x64
 		{76FCC301-EECC-4DAF-8E38-3555C14BA65E}.Debug|x64.Build.0 = Debug|x64
 		{76FCC301-EECC-4DAF-8E38-3555C14BA65E}.Debug|x86.ActiveCfg = Debug|Win32
 		{76FCC301-EECC-4DAF-8E38-3555C14BA65E}.Debug|x86.Build.0 = Debug|Win32
+		{76FCC301-EECC-4DAF-8E38-3555C14BA65E}.MinSizeRel|x64.ActiveCfg = Release|x64
+		{76FCC301-EECC-4DAF-8E38-3555C14BA65E}.MinSizeRel|x64.Build.0 = Release|x64
+		{76FCC301-EECC-4DAF-8E38-3555C14BA65E}.MinSizeRel|x86.ActiveCfg = Release|Win32
+		{76FCC301-EECC-4DAF-8E38-3555C14BA65E}.MinSizeRel|x86.Build.0 = Release|Win32
 		{76FCC301-EECC-4DAF-8E38-3555C14BA65E}.Release|x64.ActiveCfg = Release|x64
 		{76FCC301-EECC-4DAF-8E38-3555C14BA65E}.Release|x64.Build.0 = Release|x64
 		{76FCC301-EECC-4DAF-8E38-3555C14BA65E}.Release|x86.ActiveCfg = Release|Win32
 		{76FCC301-EECC-4DAF-8E38-3555C14BA65E}.Release|x86.Build.0 = Release|Win32
+		{76FCC301-EECC-4DAF-8E38-3555C14BA65E}.RelWithDebInfo|x64.ActiveCfg = Release|x64
+		{76FCC301-EECC-4DAF-8E38-3555C14BA65E}.RelWithDebInfo|x64.Build.0 = Release|x64
+		{76FCC301-EECC-4DAF-8E38-3555C14BA65E}.RelWithDebInfo|x86.ActiveCfg = Release|Win32
+		{76FCC301-EECC-4DAF-8E38-3555C14BA65E}.RelWithDebInfo|x86.Build.0 = Release|Win32
+		{BDCF6597-F53B-3D86-870E-43918A723B61}.Debug|x64.ActiveCfg = Debug|Win32
+		{BDCF6597-F53B-3D86-870E-43918A723B61}.Debug|x86.ActiveCfg = Debug|Win32
+		{BDCF6597-F53B-3D86-870E-43918A723B61}.Debug|x86.Build.0 = Debug|Win32
+		{BDCF6597-F53B-3D86-870E-43918A723B61}.MinSizeRel|x64.ActiveCfg = MinSizeRel|Win32
+		{BDCF6597-F53B-3D86-870E-43918A723B61}.MinSizeRel|x86.ActiveCfg = MinSizeRel|Win32
+		{BDCF6597-F53B-3D86-870E-43918A723B61}.MinSizeRel|x86.Build.0 = MinSizeRel|Win32
+		{BDCF6597-F53B-3D86-870E-43918A723B61}.Release|x64.ActiveCfg = Release|Win32
+		{BDCF6597-F53B-3D86-870E-43918A723B61}.Release|x86.ActiveCfg = Release|Win32
+		{BDCF6597-F53B-3D86-870E-43918A723B61}.Release|x86.Build.0 = Release|Win32
+		{BDCF6597-F53B-3D86-870E-43918A723B61}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|Win32
+		{BDCF6597-F53B-3D86-870E-43918A723B61}.RelWithDebInfo|x86.ActiveCfg = RelWithDebInfo|Win32
+		{BDCF6597-F53B-3D86-870E-43918A723B61}.RelWithDebInfo|x86.Build.0 = RelWithDebInfo|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
