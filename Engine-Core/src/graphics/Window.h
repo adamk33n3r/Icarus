@@ -24,7 +24,7 @@ namespace icarus {
 			friend void resize_callback(GLFWwindow* window, int width, int height);
 			friend void button_callback(GLFWwindow* window, int button, int action, int mods);
 			friend void cursor_callback(GLFWwindow* window, double x, double y);
-			friend static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);
+			friend void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);
 		public:
 			Window(const char* name, const int width, const int height, bool vsync = false);
 			virtual ~Window();

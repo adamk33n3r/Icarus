@@ -72,7 +72,7 @@ namespace icarus {
 		{
 			Matrix4x4 result;
 
-			float q = 1.0f / std::tanf(maths::to_radians(0.5f * fov));
+			float q = 1.0f / tanf(maths::to_radians(0.5f * fov));
 			result.elements[0 + 0 * 4] = q / aspect;
 			result.elements[1 + 1 * 4] = q;
 			result.elements[2 + 2 * 4] = (-near - far) / (near - far);

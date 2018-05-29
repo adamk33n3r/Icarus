@@ -46,6 +46,9 @@ namespace icarus {
 		Window::Window(const char* name, const int width, const int height, bool vsync)
 			: m_Name(name), m_Width(width), m_Height(height)
 		{
+      glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+      glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+      glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 			m_Window = glfwCreateWindow(m_Width, m_Height, m_Name, nullptr, nullptr);
 
 			if (!m_Window) {
